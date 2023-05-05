@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .8));
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input-place {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    width: 98%;
+    margin: 20px 0;
+}
+
+#telefone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #D8D8D8;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#telefone input {
+    width: 95%;
+    height: 50px;
+    margin: 10px;
+    border-color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all .3s;
+    display: block;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#telefone input:hover {
+    background-color: #C7E9B0;
+}
+
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+.btn-limpar {
+    background-color: #E74646;
+    color: #fff;
+}
+
+.btn-ligar {
+    background-color: #54B435;
+    color: #fff;
+}
+
+#ligando {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+}
+
+#ligando.active {
+    display: flex;
+}
+
+#ligando .conteudo {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 4px solid #000;
+}
+
+#ligando img {
+    width: 100%;
+}

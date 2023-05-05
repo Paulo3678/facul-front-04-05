@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,48 @@
     <title>Aula 04-05-23</title>
 
     <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    
+    <main>
+        <div class="container">
+            <h1>Virtual Fone</h1>
+            <input type="tel" id="input-numero" class="input-place" placeholder="Digite o seu telefone">
+            <section id="telefone">
+                <input type="button" class="input-numero" value="7">
+                <input type="button" class="input-numero" value="8">
+                <input type="button" class="input-numero" value="9">
+
+                <input type="button" class="input-numero" value="6">
+                <input type="button" class="input-numero" value="5">
+                <input type="button" class="input-numero" value="4">
+
+                <input type="button" class="input-numero" value="1">
+                <input type="button" class="input-numero" value="2">
+                <input type="button" class="input-numero" value="3">
+
+                <input type="button" class="input-numero" value="*">
+                <input type="button" class="input-numero" value="0">
+                <input type="button" class="input-numero" value="#">
+
+            </section>
+            <button class="btn btn-limpar" id="limpar-contato"><i class="fa-solid fa-ban"></i> Limpar</button>
+            <button class="btn btn-ligar" id="ligar-contato"><i class="fa-solid fa-phone-volume"></i> Ligar</button>
+        </div>
+
+        <div id="ligando">
+            <div class="conteudo">
+                <img src="./ligando.gif" alt="Ligando">
+                <a href="/" class="btn btn-limpar">
+                    <i class="fa-solid fa-ban"></i> Fechar
+                </a>
+            </div>
+        </div>
+    </main>
 
     <script src="./index.js"></script>
 </body>
